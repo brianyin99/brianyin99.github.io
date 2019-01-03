@@ -55,10 +55,10 @@ p {
 }
 
 #introImage {
-  width: 250%;
+  width: 170%;
   height: auto;
   position: relative;
-  right: 57%;
+  right: 63px;
 }
 
 #bigcircle {
@@ -81,12 +81,13 @@ p {
     position: relative;
     left: 100px;
     bottom: 40px;
+    border: 2px solid red;
 }
 
 .introTextContainer {
   width: 50%;
   position: absolute;
-  top: 0;
+  bottom: 360px;
   left: 370px;
   padding: 15px 0 15px 40px;
   background-color: white;
