@@ -20,7 +20,8 @@
 /*https://stackoverflow.com/questions/21003535/anyway-to-
 prevent-the-blue-highlighting-of-elements-in-chrome-when-clicking-quic/30319808*/
 #yellowtri, #bluewave, #bigcircle,
-#smallcircle, #introImage, li a  {
+#smallcircle, #introImage,
+#lefteye, #righteye, #eyes, li a  {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -37,9 +38,8 @@ li a {
 }
 
 li a:hover {
+  text-decoration: underline;
   color: #F29595;
-  animation-delay: .05s;
-  animation-duration: 1s;
 }
 
 #yellowtri {
@@ -79,6 +79,32 @@ p::selection {
   position: absolute;
 }
 
+#eyes {
+  /*border: 2px solid red;*/
+  position: relative;
+}
+
+#eyes::selection {
+  color: #F29595
+}
+
+#lefteye {
+  position: absolute;
+  height: 5px;
+  /*border: 2px solid lime;*/
+  right: 40px;
+  top: 16px;
+}
+
+#righteye {
+  position: absolute;
+  height: 5px;
+  /*border: 2px solid red;*/
+  right: 26px;
+  top: 16px;
+
+}
+
 #introImage {
   width: 170%;
   height: auto;
@@ -91,8 +117,6 @@ p::selection {
   transform: scale(1.1, 1.1);
   transition: all .4s ease-in-out;
 }
-
-
 
 #bigcircle {
   height: 70px;
@@ -122,7 +146,7 @@ p::selection {
   position: absolute;
   bottom: 360px;
   left: 370px;
-  padding: 15px 0 15px 40px;
+  padding: 15px 15px 15px 40px;
   background-color: white;
   /*box-shadow: 5px 5px 5px #505050;*/
 }
