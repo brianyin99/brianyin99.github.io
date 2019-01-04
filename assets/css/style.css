@@ -17,12 +17,27 @@
   overflow: hidden;
 }
 
+#yellowtri, #bluewave, #bigcircle,
+#smallcircle, #introImage, li a  {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 li a {
-  font-family: "Futura", sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 24px;
   text-decoration: none;
   color: #4A4A4A;
+}
+
+li a:hover {
+  color: #F29595;
+  animation-delay: .05s;
+  animation-duration: 1s;
 }
 
 #yellowtri {
@@ -42,10 +57,18 @@ li a {
 }
 
 p {
-  font-family: "Futura", sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 24px;
   line-height: 35px;
   color: #4A4A4A;
+}
+
+strong::selection {
+  color: #F29595;
+}
+
+p::selection {
+  color: #F29595;
 }
 
 .intro {
@@ -63,16 +86,16 @@ p {
 
 #bigcircle {
   height: 70px;
-  position: relative;
+  position: absolute;
   left: 820px;
-  top: 460px;
+  top: 480px;
 }
 
 #smallcircle {
   height: 40px;
-  position: relative;
-  left: 700px;
-  top: 500px;
+  position: absolute;
+  left: 740px;
+  top: 550px;
 }
 .introImageContainer {
     width: 350px;
@@ -90,4 +113,5 @@ p {
   left: 370px;
   padding: 15px 0 15px 40px;
   background-color: white;
+  /*box-shadow: 5px 5px 5px #505050;*/
 }
