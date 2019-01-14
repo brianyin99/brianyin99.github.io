@@ -1,3 +1,11 @@
+/*@media only screen and (max-width: 950px) {
+
+    #campanile_bw {
+      opacity: 0.1;
+    }
+}*/
+
+
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -14,7 +22,9 @@
   left: 0;
   min-height: 100vh;
   min-width: 100vw;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  width: 100vw;
+  border: 2px solid blue;
 }
 
 /*https://stackoverflow.com/questions/21003535/anyway-to-
@@ -34,7 +44,7 @@ li a {
   font-family: "Avenir", sans-serif;
   font-size: 24px;
   text-decoration: none;
-  color: #4A4A4A;
+  color: #3B3B3B;
 }
 
 li a:hover {
@@ -62,7 +72,11 @@ p {
   font-family: "Avenir", sans-serif;
   font-size: 24px;
   line-height: 35px;
-  color: #4A4A4A;
+  color: #3B3B3B
+}
+
+strong {
+  font-size: 32px;
 }
 
 strong::selection {
@@ -76,11 +90,10 @@ p::selection {
 .intro {
   width: 100%;
   top: 150px;
-  position: absolute;
+  /*position: absolute;*/
 }
 
-#eyes {
-  /*border: 2px solid red;*/
+/* #eyes {
   position: relative;
 }
 
@@ -91,7 +104,6 @@ p::selection {
 #lefteye {
   position: absolute;
   height: 5px;
-  /*border: 2px solid lime;*/
   right: 40px;
   top: 16px;
 }
@@ -99,11 +111,9 @@ p::selection {
 #righteye {
   position: absolute;
   height: 5px;
-  /*border: 2px solid red;*/
   right: 26px;
   top: 16px;
-
-}
+} */
 
 #introImage {
   width: 170%;
@@ -144,9 +154,63 @@ p::selection {
 .introTextContainer {
   width: 50%;
   position: absolute;
-  bottom: 360px;
-  left: 370px;
+  top: 80px;
+  left: 10vw;
   padding: 15px 15px 15px 40px;
-  background-color: white;
-  /*box-shadow: 5px 5px 5px #505050;*/
+
 }
+
+.projectContainer {
+  border: 2px solid red;
+  position: relative;
+  top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+}
+
+#colorhist {
+  width: 50vw;
+  position: relative;
+  right: 10px;
+}
+
+.projectImageContainer {
+  border: 2px solid blue;
+  height: 300px;
+  width: 650px;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Avenir", sans-serif;
+  font-size: 40px;
+  color: #4A4A4A;
+}
+
+#campanile_bw {
+  height: 700px;
+  position: relative;
+  right: 100px;
+}
+
+#campanile_container {
+  position: absolute;
+  height: 600px;
+  width: 250px;
+  overflow: hidden;
+  top: 80px;
+  right: 100px;
+}
+
+/*#bluerectangle {
+  width: 90vw;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  left: 3vw;
+  border: 30px solid #B6CFFD
+}*/
