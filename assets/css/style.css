@@ -1,11 +1,3 @@
-/*@media only screen and (max-width: 950px) {
-
-    #campanile_bw {
-      opacity: 0.1;
-    }
-}*/
-
-
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -24,14 +16,13 @@
   min-width: 100vw;
   /*overflow: hidden;*/
   width: 100vw;
-  border: 2px solid blue;
 }
 
 /*https://stackoverflow.com/questions/21003535/anyway-to-
 prevent-the-blue-highlighting-of-elements-in-chrome-when-clicking-quic/30319808*/
-#yellowtri, #bluewave, #bigcircle,
-#smallcircle, #introImage,
-#lefteye, #righteye, #eyes, li a  {
+#introImage, li a, br,
+#campanile_container,
+.projectImageContainer  {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -52,22 +43,6 @@ li a:hover {
   color: #F29595;
 }
 
-#yellowtri {
-  height: 500px;
-  position: absolute;
-  left: 850px;
-  top: 20px;
-  z-index: -1;
-}
-
-#bluewave {
-  width: 1000px;
-  position: absolute;
-  left: 10px;
-  top: -80px;
-  z-index: -2;
-}
-
 p {
   font-family: "Avenir", sans-serif;
   font-size: 24px;
@@ -79,41 +54,16 @@ strong {
   font-size: 32px;
 }
 
-strong::selection {
-  color: #F29595;
-}
-
-p::selection {
+strong::selection,
+p::selection,
+h1::selection {
   color: #F29595;
 }
 
 .intro {
   width: 100%;
   top: 150px;
-  /*position: absolute;*/
 }
-
-/* #eyes {
-  position: relative;
-}
-
-#eyes::selection {
-  color: #F29595
-}
-
-#lefteye {
-  position: absolute;
-  height: 5px;
-  right: 40px;
-  top: 16px;
-}
-
-#righteye {
-  position: absolute;
-  height: 5px;
-  right: 26px;
-  top: 16px;
-} */
 
 #introImage {
   width: 170%;
@@ -126,20 +76,6 @@ p::selection {
 #introImage:hover {
   transform: scale(1.1, 1.1);
   transition: all .4s ease-in-out;
-}
-
-#bigcircle {
-  height: 70px;
-  position: absolute;
-  left: 820px;
-  top: 480px;
-}
-
-#smallcircle {
-  height: 40px;
-  position: absolute;
-  left: 740px;
-  top: 550px;
 }
 
 .introImageContainer {
@@ -161,7 +97,6 @@ p::selection {
 }
 
 .projectContainer {
-  border: 2px solid red;
   position: relative;
   top: 50px;
   margin-bottom: 10px;
@@ -172,17 +107,31 @@ p::selection {
 
 }
 
-#colorhist {
-  width: 50vw;
+#colorhist,
+#placeholderProj {
+  width: 68vw;
   position: relative;
-  right: 10px;
+  right: 5px;
+  bottom: 20px;
+  transition: all .4s ease-in-out;
+}
+
+#colorhist:hover,
+#placeholderProj:hover {
+  transform: scale(1.15, 1.15);
+  transition: all .4s ease-in-out;
 }
 
 .projectImageContainer {
-  border: 2px solid blue;
-  height: 300px;
-  width: 650px;
+  height: 27vw;
+  width: 65vw;
   overflow: hidden;
+  transition: all .4s ease-in-out;
+}
+
+.projectImageContainer:hover {
+  transform: scale(0.95, 0.95);
+  transition: all .4s ease-in-out;
 }
 
 h1 {
@@ -202,15 +151,6 @@ h1 {
   height: 600px;
   width: 250px;
   overflow: hidden;
-  top: 80px;
+  top: 100px;
   right: 100px;
 }
-
-/*#bluerectangle {
-  width: 90vw;
-  height: 500px;
-  position: absolute;
-  z-index: -1;
-  left: 3vw;
-  border: 30px solid #B6CFFD
-}*/
