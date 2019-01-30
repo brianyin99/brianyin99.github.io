@@ -124,7 +124,7 @@ h1::selection {
 
 .projectImageContainer {
   height: 27vw;
-  width: 65vw;
+  width: 70vw;
   overflow: hidden;
   transition: all .4s ease-in-out;
 }
@@ -140,10 +140,11 @@ h1 {
   color: #4A4A4A;
 }
 
-#campanile_bw {
+#campanile {
   height: 700px;
   position: relative;
   right: 100px;
+  filter: grayscale(100%);
 }
 
 #campanile_container {
@@ -153,4 +154,43 @@ h1 {
   overflow: hidden;
   top: 100px;
   right: 100px;
+}
+
+/***********
+RAINBOW.HTML
+***********/
+
+.rainbow {
+  display: flex;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.rainbowBox {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  border: 3px solid black;
+  position: relative;
+  min-width: 500px;
+}
+
+#rainbowTunnel {
+  height: 500px;
+  position: relative;
+}
+
+#rainbowTunnel2 {
+  position: absolute;
+  height: 500px;
+}
+
+#whiteSquare {
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  top: 220px;
+  left: 220px;
+  height: 60px;
 }
