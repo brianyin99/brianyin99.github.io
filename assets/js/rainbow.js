@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   spawnHeight = $("#whiteSquare").height();
-  boxHeight = $(".rainbowBox").height();
+  boxHeight = $("#rainbowBox").height();
   midHeight = Math.pow(boxHeight, 2) / spawnHeight;
 
   setInterval(function () {

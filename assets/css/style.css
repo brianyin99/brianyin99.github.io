@@ -22,7 +22,8 @@
 prevent-the-blue-highlighting-of-elements-in-chrome-when-clicking-quic/30319808*/
 #introImage, li a, br,
 #campanile_container,
-.projectImageContainer  {
+.projectImageContainer,
+.light {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -108,6 +109,7 @@ h1::selection {
 }
 
 #colorhist,
+#notebook,
 #placeholderProj {
   width: 68vw;
   position: relative;
@@ -117,6 +119,7 @@ h1::selection {
 }
 
 #colorhist:hover,
+#notebook:hover,
 #placeholderProj:hover {
   transform: scale(1.15, 1.15);
   transition: all .4s ease-in-out;
@@ -160,14 +163,15 @@ h1 {
 RAINBOW.HTML
 ***********/
 
-.rainbow {
+.squareProject {
   display: flex;
   height: 95vh;
   justify-content: center;
   align-items: center;
+  border: 2px solid red;
 }
 
-.rainbowBox {
+#rainbowBox {
   height: 500px;
   width: 500px;
   overflow: hidden;
@@ -193,4 +197,22 @@ RAINBOW.HTML
   top: 220px;
   left: 220px;
   height: 60px;
+}
+
+/***********
+LIGHTS.HTML
+***********/
+
+#lightBox {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  border: 3px solid black;
+  position: relative;
+  min-width: 500px;
+
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
