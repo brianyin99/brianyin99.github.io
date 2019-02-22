@@ -111,11 +111,13 @@ h1::selection {
 #colorhist,
 #notebook,
 #placeholderProj {
-  width: 68vw;
+  width: 70vw;
   position: relative;
-  right: 5px;
-  bottom: 20px;
   transition: all .4s ease-in-out;
+}
+
+#colorhist {
+  bottom: 30px;
 }
 
 #colorhist:hover,
@@ -130,17 +132,20 @@ h1::selection {
   width: 70vw;
   overflow: hidden;
   transition: all .4s ease-in-out;
+
 }
 
 .projectImageContainer:hover {
   transform: scale(0.95, 0.95);
   transition: all .4s ease-in-out;
+
 }
 
 h1 {
   font-family: "Avenir", sans-serif;
   font-size: 40px;
   color: #4A4A4A;
+  margin: 30px 0 0 0;
 }
 
 #campanile {
