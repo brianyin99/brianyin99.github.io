@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <ul class="navbar">
+          <li class="navitem"><a href="index.html">Home</a></li>
+          <li class="navitem"><a href="projects.html">Projects</a></li>
+          <li class="navitem"><a href="assets/Brian Yin resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </header>
+
+      <div id="me"></div>
+      <div class="carousel">
+        <button class="carouselButton carouselButton--left is-hidden">&lt;</button>
+        <div class="carouselTrackContainer">
+          <ul class="carouselTrack">
+            <li class="carouselSlide current-slide">
+                <img id="rainbowTunnel2" src="assets/img/rainbowtunnel.svg" alt="rainbow tunnel"/>
+                <div id="rainbowBox">
+                  <img id="rainbowTunnel" src="assets/img/rainbowtunnel.svg" alt="rainbow tunnel"/>
+                  <img id="whiteSquare" src="assets/img/whitesquare.svg" alt="white square"/>
+                </div>
+            </li>
+            <li class="carouselSlide">
+              <div id="lightBox">
+                <div id="lightInstructions">[ Press any key. . . ]</div>
+                <img class="light" id="light1" src="assets/img/lights.svg" alt="light layer"/>
+              </div>
+            </li>
+            <!--<li class="carouselSlide">
+              <img class= "carouselImage" src="assets/img/campanile.jpg" alt="me">
+            </li>-->
+          </ul>
+        </div>
+        <button class="carouselButton carouselButton--right">&gt;</button>
+
+        <div class="carouselNav">
+          <button class="carouselIndicator current-slide"></button>
+          <button class="carouselIndicator"></button>
+          <!--<button class="carouselIndicator"></button>-->
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="assets/js/carousel.js"></script>
