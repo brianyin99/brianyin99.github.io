@@ -1,17 +1,38 @@
 body {
-  background-color: #f5e8cb
+  background-color: #FAEAB9
 }
 
 a {
-  text-decoration: none
+  text-decoration: underline;
+  color: #363333
 }
 
+b, strong, h1, h2, h3 {
+   color: #6B3F3F;
+   }
+
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .TextContainer {
   width: 60%;
   position: absolute;
   padding: 10px 10px 10px 30px;
+}
+
+.center {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+#cube {
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  opacity: 40%;
+  z-index: -1;
 }
